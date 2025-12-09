@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.4rem;
+}
+
+body {
+  font-family: Inter, serif;
+  /* display: flex; */
+}
+
+header {
+  display: flex;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-out;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  font-size: 1.05rem;
+}
+
+nav ul {
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+nav {
+  align-content: space-evenly;
+}
+
+h1 {
+  padding: 0.5em;
+  text-align: center;
+}
+
+hr {
+  color: rgb(116, 142, 168);
+  text-align: center;
+  height: 5px;
+}
+
+#hobbies-container {
+  background-color: rgb(162, 187, 212);
+  box-sizing: border-box;
+}
+
+#hobby {
+  margin-left: 2rem;
+}
