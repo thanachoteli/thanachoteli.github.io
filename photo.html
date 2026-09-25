@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Photography</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="photo.html">Photography</a></li>
-                    <li><a href="project.html">Project</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="name-and-link">
-            <h1>Photography</h1>
-        </div>
-        <section id="container">
-            <p>
-                Photography has been my passion for extremely a long time. My
-                current gear is Canon EOS RP with RF 35mm F/1.8.
-            </p>
-        </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photography — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Larger grid for photo page */
+    .photo-grid-full {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-3);
+    }
 
-        <section id="img-container">
-            <img
-                src="images/photography/20231229_005112_Canon EOS RP.jpg"
-                alt=""
-            />
-            <img
-                src="images/photography/20231231_110316-1_Canon EOS RP.jpg"
-                alt=""
-            />
-            <img src="images/photography/20250207_105103_.jpg" alt="" />
-            <img src="images/photography/20250208_150218_.jpg" alt="" />
-            <img src="images/photography/20250208_151203_.jpg" alt="" />
-            <img src="images/photography/20250701_132047_.CR3_.jpg" alt="" />
-            <img src="images/photography/20250701_141643_.jpg" alt="" />
-            <img src="images/photography/20250701_141720_.jpg" alt="" />
-            <img src="images/photography/20250701_165743_.jpg" alt="" />
-            <img src="images/photography/20250703_161135_-1.CR3_.jpg" alt="" />
-        </section>
-        <script src="app.js"></script>
-    </body>
+    .photo-grid-full .photo-item {
+      aspect-ratio: 3/2;
+    }
+
+    /* Wide item spans 2 columns */
+    .photo-item.wide {
+      grid-column: span 2;
+      aspect-ratio: 16/7;
+    }
+
+    @media (max-width: 600px) {
+      .photo-grid-full { grid-template-columns: 1fr; }
+      .photo-item.wide { grid-column: span 1; aspect-ratio: 3/2; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrap">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">Thanachote Li</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="photo.html" class="active">Photography</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 class="page-title">Photography</h1>
+    <p class="page-subtitle">Mostly street and landscape. Shot on Canon RP + RF35mm. Check out my <a style="text-decoration: underline;" href="https://www.flickr.com/photos/200592434@N05/">flickr</a></p>
+  </header>
+
+  <div class="photo-grid-full">
+    <!-- Replace src with your actual image paths.
+         Use class="photo-item wide" for a landscape hero shot. -->
+    <div class="photo-item wide">
+      <img src="images/photography/20231229_005112_Canon EOS RP.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item">
+      <img src="images/photography/20231231_110316-1_Canon EOS RP.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item">
+      <img src="images/photography/20250207_105103_.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item">
+      <img src="images/photography/20250208_150218_.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item">
+      <img src="images/photography/20250208_151203_.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item wide">
+      <img src="images/photography/20250701_132047_.CR3_.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item">
+      <img src="images/photography/20250701_165743_.jpg" alt="Description" loading="lazy" />
+    </div>
+    <div class="photo-item">
+      <img src="images/photography/20250701_141720_.jpg" alt="Description" loading="lazy" />
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2024 Your Name</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/thanachoteli" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/thanachote-li-000aa525b/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:you@email.com">Email</a></li>
+    </ul>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
 </html>

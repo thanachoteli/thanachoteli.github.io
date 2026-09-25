@@ -1,72 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Thanachote Li Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet"
-        />
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="photo.html">Photography</a></li>
-                    <li><a href="project.html">Project</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="name-and-link">
-            <h1>Thanachote Li</h1>
-            <a href="https://github.com/thanachoteli">My Github</a>
-            <a href="https://www.linkedin.com/in/thanachote-li-000aa525b/"
-                >My Linkedin</a
-            >
-        </div>
-        <section id="container">
-            <p>
-                I am currently a first-year undergraduate student at
-                Chulalongkorn University, studying Automotive Design and
-                Manufacturing Engineering (ADME). Right now, I am learning web
-                development, specifically full-stack development. I am looking
-                to find any full-stack development internship.
-            </p>
-        </section>
+<div class="site-wrap">
 
-        <b>Currently Not Complete</b>
+  <!-- Nav -->
+  <nav class="site-nav">
+    <a class="nav-logo" href="index.html">Thanachote Li</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="photo.html">Photography</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+  </nav>
 
-        <section id="container">
-            <div>
-                <h2>My hobbies</h2>
-                <ul>
-                    <li>Photography</li>
-                    <li>Racing</li>
-                    <li>Playing game</li>
-                    <li>Bass</li>
-                </ul>
-            </div>
-            <div id="">
-                <h2>Progamming Skills</h2>
-                <ul>
-                    <li>C++</li>
-                    <li>HTML/CSS</li>
-                    <li>Javascript</li>
-                    <li>Python</li>
-                    <li>NodeJs and ExpressJs</li>
-                </ul>
-            </div>
-        </section>
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-eyebrow">&amp; — Bangkok</p>
+    <h1 class="hero-name">Thanachote Li</h1>
+    <p class="hero-bio">
+      I build things for the web and take photographs for fun.
+      Currently working on ...
+    </p>
+    <div class="hero-links">
+      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <a href="cv.html" class="btn">Download CV</a>
+      <a href="mailto:you@email.com" class="btn">Email</a>
+    </div>
+  </section>
 
-        <section id="project-container">
-            <h2>My project</h2>
-            To view more detail, click directly or vist the project link at
-            header
-        </section>
-    </body>
+  <!-- Selected Work -->
+  <section class="section">
+    <p class="section-label">Selected Work</p>
+    <ul class="item-list">
+      <li>
+        <a href="projects.html#project-one" class="item-link">
+          <div>
+            <div class="item-title">Project One</div>
+            <div class="item-desc">Short description of what this project is about.</div>
+          </div>
+          <span class="item-meta">2024</span>
+        </a>
+      </li>
+      <li>
+        <a href="projects.html#project-two" class="item-link">
+          <div>
+            <div class="item-title">Project Two</div>
+            <div class="item-desc">Short description of what this project is about.</div>
+          </div>
+          <span class="item-meta">2024</span>
+        </a>
+      </li>
+      <li>
+        <a href="projects.html#project-three" class="item-link">
+          <div>
+            <div class="item-title">Project Three</div>
+            <div class="item-desc">Short description of what this project is about.</div>
+          </div>
+          <span class="item-meta">2023</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Recent Photos -->
+  <section class="section">
+    <p class="section-label">Recent Photography</p>
+    <div class="photo-grid" style="margin-bottom: var(--space-4);">
+      <!-- Replace src with your actual image paths -->
+      <div class="photo-item">
+        <img src="images/photo-1.jpg" alt="Photo description" loading="lazy" />
+      </div>
+      <div class="photo-item">
+        <img src="images/photo-2.jpg" alt="Photo description" loading="lazy" />
+      </div>
+    </div>
+    <a href="photo.html" class="btn">All photos</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2024 Your Name</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/thanachoteli" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/thanachote-li-000aa525b/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:you@email.com">Email</a></li>
+    </ul>
+  </footer>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
 </html>
