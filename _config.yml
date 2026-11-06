@@ -1,0 +1,5 @@
+title: Thanachote Li
+markdown: kramdown
+permalink: /blog/:title/
+exclude:
+  - BLOGGING.md

@@ -1,0 +1,18 @@
+---
+layout: blog
+---
+<main class="post-page">
+  <article>
+    <header class="post-header">
+      <a class="post-back" href="{{ '/blog.html' | relative_url }}">← All posts</a>
+      <p class="blog-post-meta">
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+        {% assign topic = page.categories | first %}
+        {% if topic %}<span class="post-topic">{{ topic | replace: '-', ' ' | capitalize }}</span>{% endif %}
+      </p>
+      <h1 class="page-title">{{ page.title | escape }}</h1>
+      {% if page.description %}<p class="page-subtitle">{{ page.description | escape }}</p>{% endif %}
+    </header>
+    <div class="post-content">{{ content }}</div>
+  </article>
+</main>

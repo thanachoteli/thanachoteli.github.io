@@ -8,39 +8,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Larger grid for photo page */
-    .photo-grid-full {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: var(--space-3);
-    }
-
-    .photo-grid-full .photo-item {
-      aspect-ratio: 3/2;
-    }
-
-    /* Wide item spans 2 columns */
-    .photo-item.wide {
-      grid-column: span 2;
-      aspect-ratio: 16/7;
-    }
-
-    @media (max-width: 600px) {
-      .photo-grid-full { grid-template-columns: 1fr; }
-      .photo-item.wide { grid-column: span 1; aspect-ratio: 3/2; }
-    }
-  </style>
 </head>
 <body>
 
 <div class="site-wrap">
 
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Main navigation">
     <a class="nav-logo" href="index.html">Thanachote Li</a>
     <ul class="nav-links">
       <li><a href="projects.html">Projects</a></li>
       <li><a href="photo.html" class="active">Photography</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
@@ -50,46 +28,43 @@
     <p class="page-subtitle">Mostly street and landscape. Shot on Canon RP + RF35mm. Check out my <a style="text-decoration: underline;" href="https://www.flickr.com/photos/200592434@N05/">flickr</a></p>
   </header>
 
-  <div class="photo-grid-full">
-    <!-- Replace src with your actual image paths.
-         Use class="photo-item wide" for a landscape hero shot. -->
+  <main class="photo-grid-full">
     <div class="photo-item wide">
-      <img src="images/photography/20231229_005112_Canon EOS RP.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20231229_005112_Canon EOS RP.jpg" alt="Photograph from December 2023" loading="lazy" />
     </div>
     <div class="photo-item">
-      <img src="images/photography/20231231_110316-1_Canon EOS RP.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20231231_110316-1_Canon EOS RP.jpg" alt="Photograph from December 2023" loading="lazy" />
     </div>
     <div class="photo-item">
-      <img src="images/photography/20250207_105103_.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20250207_105103_.jpg" alt="Photograph from February 2025" loading="lazy" />
     </div>
     <div class="photo-item">
-      <img src="images/photography/20250208_150218_.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20250208_150218_.jpg" alt="Photograph from February 2025" loading="lazy" />
     </div>
     <div class="photo-item">
-      <img src="images/photography/20250208_151203_.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20250208_151203_.jpg" alt="Photograph from February 2025" loading="lazy" />
     </div>
     <div class="photo-item wide">
-      <img src="images/photography/20250701_132047_.CR3_.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20250701_132047_.CR3_.jpg" alt="Photograph from July 2025" loading="lazy" />
     </div>
     <div class="photo-item">
-      <img src="images/photography/20250701_165743_.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20250701_165743_.jpg" alt="Photograph from July 2025" loading="lazy" />
     </div>
     <div class="photo-item">
-      <img src="images/photography/20250701_141720_.jpg" alt="Description" loading="lazy" />
+      <img src="images/photography/20250701_141720_.jpg" alt="Photograph from July 2025" loading="lazy" />
     </div>
-  </div>
+  </main>
 
   <footer class="site-footer">
     <!-- <p>© 2024 Your Name</p> -->
     <ul class="footer-links">
       <li><a href="https://github.com/thanachoteli" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/thanachote-li-000aa525b/" target="_blank" rel="noopener">LinkedIn</a></li>
-      <!-- <li><a href="mailto:you@email.com">Email</a></li> -->
     </ul>
   </footer>
 
 </div>
 
-<script src="js/main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

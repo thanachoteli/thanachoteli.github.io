@@ -13,16 +13,18 @@
 
 <div class="site-wrap">
 
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Main navigation">
     <a class="nav-logo" href="index.html">Thanachote Li</a>
     <ul class="nav-links">
       <li><a href="projects.html">Projects</a></li>
       <li><a href="photo.html">Photography</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="cv.html" class="active">CV</a></li>
     </ul>
   </nav>
 
-  <header style="display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-6); margin-bottom: var(--space-12);">
+  <main>
+  <header class="cv-page-header">
     <div>
       <h1 class="page-title" style="margin-bottom: var(--space-2);">Curriculum Vitae</h1>
       <p style="font-size: var(--text-sm); color: var(--muted);">Updated October 2026</p>
@@ -87,10 +89,10 @@
   <div class="cv-section">
     <h2 class="cv-section-title">Skills</h2>
     <div class="cv-entry">
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: var(--space-3);">
+        <div class="skills-grid">
         <div>
-          <div style="font-size: var(--text-sm); font-weight: 500; margin-bottom: var(--space-2);">Languages</div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-1);">
+          <div class="skill-category">Languages</div>
+          <ul class="skill-list">
             <li style="font-size: var(--text-sm); color: var(--muted);">C/C++</li>
             <li style="font-size: var(--text-sm); color: var(--muted);">Python</li>
             <li style="font-size: var(--text-sm); color: var(--muted);">JavaScript</li>
@@ -98,16 +100,16 @@
           </ul>
         </div>
         <div>
-          <div style="font-size: var(--text-sm); font-weight: 500; margin-bottom: var(--space-2);">Frameworks</div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-1);">
+          <div class="skill-category">Frameworks</div>
+          <ul class="skill-list">
             <li style="font-size: var(--text-sm); color: var(--muted);">React</li>
             <li style="font-size: var(--text-sm); color: var(--muted);">Node.js</li>
             <li style="font-size: var(--text-sm); color: var(--muted);">FastAPI</li>
           </ul>
         </div>
         <div>
-          <div style="font-size: var(--text-sm); font-weight: 500; margin-bottom: var(--space-2);">Tools</div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-1);">
+          <div class="skill-category">Tools</div>
+          <ul class="skill-list">
             <li style="font-size: var(--text-sm); color: var(--muted);">Git</li>
             <!-- <li style="font-size: var(--text-sm); color: var(--muted);">Docker</li> -->
             <!-- <li style="font-size: var(--text-sm); color: var(--muted);"></li> -->
@@ -116,18 +118,18 @@
       </div>
     </div>
   </div>
+  </main>
 
   <footer class="site-footer">
     <!-- <p>© 2024 Your Name</p> -->
     <ul class="footer-links">
       <li><a href="https://github.com/thanachoteli" target="_blank" rel="noopener">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/thanachote-li-000aa525b/" target="_blank" rel="noopener">LinkedIn</a></li>
-      <!-- <li><a href="mailto:you@email.com">Email</a></li> -->
     </ul>
   </footer>
 
 </div>
 
-<script src="js/main.js"></script>
+<script src="main.js" defer></script>
 </body>
 </html>

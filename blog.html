@@ -1,0 +1,42 @@
+---
+layout: blog
+title: Blog
+description: Notes on technology, photography, and things I enjoy.
+---
+<header class="blog-header">
+  <div>
+    <h1 class="page-title">Blog</h1>
+    <p class="page-subtitle">Notes on technology, photography, and things I enjoy.</p>
+  </div>
+  <label class="blog-sort-label" for="post-sort">Sort
+    <select id="post-sort" class="blog-sort">
+      <option value="newest">Most recent</option>
+      <option value="oldest">Oldest first</option>
+    </select>
+  </label>
+</header>
+<main class="blog-layout">
+  <aside class="blog-sidebar" aria-label="Filter blog posts by topic">
+    <h2 class="sidebar-title">Topics</h2>
+    <div class="topic-list">
+      <button class="topic-button active" type="button" data-topic="all" aria-pressed="true">All posts</button>
+      <button class="topic-button" type="button" data-topic="technology" aria-pressed="false">Technology</button>
+      <button class="topic-button" type="button" data-topic="photography" aria-pressed="false">Photography</button>
+      <button class="topic-button" type="button" data-topic="personal" aria-pressed="false">Personal</button>
+    </div>
+  </aside>
+  <section class="blog-feed" aria-label="Blog posts">
+    {% for post in site.posts %}
+      {% assign topic = post.categories | first | default: 'personal' %}
+      <article class="blog-post" data-topic="{{ topic | slugify }}">
+        <p class="blog-post-meta">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time>
+          <span class="post-topic">{{ topic | replace: '-', ' ' | capitalize }}</span>
+        </p>
+        <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+        {% if post.description %}<p class="blog-post-excerpt">{{ post.description | escape }}</p>{% endif %}
+      </article>
+    {% endfor %}
+    <p class="blog-empty"{% if site.posts.size > 0 %} hidden{% endif %}>No posts yet. Check back soon.</p>
+  </section>
+</main>
