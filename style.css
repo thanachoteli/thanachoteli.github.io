@@ -176,6 +176,7 @@ a { color: inherit; text-decoration: none; }
 .post-content blockquote { border-left: 2px solid var(--rule); padding-left: var(--space-4); color: var(--muted); }
 .post-content pre { overflow-x: auto; margin-bottom: var(--space-4); padding: var(--space-4); background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); }
 .post-content code { font-family: var(--font-mono); font-size: 0.9em; }
+.post-content mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
 
 /* ─── Home hero ───────────────────────────────────────────── */
 .hero {

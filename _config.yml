@@ -1,5 +1,7 @@
 title: Thanachote Li
 markdown: kramdown
 permalink: /blog/:title/
+kramdown:
+  math_engine: mathjax
 exclude:
   - BLOGGING.md

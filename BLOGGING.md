@@ -18,6 +18,18 @@ description: "A short summary shown on the blog index."
 
 Write the article below the second `---` using Markdown. Use one category: `technology`, `photography`, or `personal`. That category controls the sidebar filter and the label shown with the post. Jekyll orders the index by the post date; the page also lets readers switch between most recent and oldest first.
 
+## Write equations
+
+Use `$...$` for an inline equation, such as `$x^2 + y^2 = z^2$`. Put a display equation between `$$` lines on their own lines:
+
+```markdown
+$$
+\sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+$$
+```
+
+MathJax renders the equations in the browser. It loads from a CDN, so readers need an internet connection for the formatted math; without it, they will still see the TeX source.
+
 ## Remove a post
 
 Delete its `.md` file from `_posts/`. Jekyll will remove both the article page and its entry in the blog index on the next Pages build.
