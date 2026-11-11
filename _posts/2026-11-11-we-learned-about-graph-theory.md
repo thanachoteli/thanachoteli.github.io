@@ -28,10 +28,13 @@ What I found hand-shaking theorem quite fascinating is because it is seem so mag
 
 Moreover, we can link the hand-shaking theorem to the complete graph. 
 A **complete graph** is defined to be a simple undirected graph in which every pair of distinct vertices is connected by a unique edge. For example, the 5-node complete graph is a shape of the star. The total edges is $4+3+2+1=10$. Since each node contains n-1 edges. Everytime we add each edge from each node, we must degree by the number we alread count, hence the decrement. In general, we can defined the number of edges as 
+
 $$
 m = \sum_{k=1}^{n-1} = 1 + 2 + \ldots + n-1 = \frac{n(n-1)}{2} 
 $$
+
 This is where we can use the hand-shaken theorem to find the above formula using alternative method. Since the graph is complete, each vertex has n-1 degree and there are n nodes, so
+
 $$
 2m = n(n-1) \implies m=\frac{n(n-1)}{2}
 $$
