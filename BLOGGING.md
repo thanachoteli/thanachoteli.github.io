@@ -20,7 +20,13 @@ Write the article below the second `---` using Markdown. Use one category: `tech
 
 ## Write equations
 
-Use `$...$` for an inline equation, such as `$x^2 + y^2 = z^2$`. Put a display equation between `$$` lines on their own lines:
+Use `$...$` for inline math within a sentence, such as:
+
+```markdown
+Euler's identity is $e^{i\pi} + 1 = 0$.
+```
+
+Use `$$...$$` on separate lines for a centered display equation:
 
 ```markdown
 $$

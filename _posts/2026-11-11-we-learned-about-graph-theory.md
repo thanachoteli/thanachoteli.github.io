@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A walk with my camera"
+title: "Graph Theory"
 date: 2026-11-06 10:00:00 +0700
 categories: personal
 description: "Basic theory of graph that I learned for today's discrete class"
@@ -8,16 +8,20 @@ description: "Basic theory of graph that I learned for today's discrete class"
 
 # Graph Theory
 In today discrete structure class, we learned about the basic of graph theory. We just went over the basic like the definiton and theorem. For defintion, the graph $G$ is defined as 
+
 $$
 G = (V,E)
 $$
+
 where $V$ is the non-empty set of verticies and $E$ is the 2 subset of items that represent edges
 Another is the **degree**, which is a number of edges incident on a node
 
 The theorem that I found the most interesting is the **hand-shaking theorem**. It is a way to relate the total degrees with the number of edges of graph. If $G$ is a simple undirected graph, then the below relation is true
+
 $$
 2m = \sum_{v\in V} \text{degree}(v) 
 $$
+
 where $m$ is the edges and $V$ is the set of verticies. Simply, the total degree of all verticies in set $V$ of graph $G$ is $2m$. 
 
 What I found hand-shaking theorem quite fascinating is because it is seem so magical. We know that each edge has two nodes connected. So we can implies the above relation
