@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Graph Theory"
-date: 2026-11-06 10:00:00 +0700
+date: 2026-11-11 12:42:00 +0700
 categories: personal
 description: "Basic theory of graph that I learned for today's discrete class"
 ---
